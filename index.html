@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo da Velha</title>
+    <style>
+        header {
+            text-align: center;
+        }
+        body {
+            text-align: center;
+        }
+        #jogo{
+             width:603px;
+             height:600px;
+             border:solid 3px
+        }
+ 
+        .linha{
+            height:200px;
+            border-bottom:solid 1px;
+        }
+ 
+        .casa{
+            width:200px;
+            height:100%;
+            border-right:solid 1px;
+            float:left;
+        }
+        div{
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            margin: auto;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Bem vindo ao jogo da velha</h1>
+    </header>
+      
+    <p>
+        <h3 id="texto"></h3>
+        <input id="campo"/>
+        <button id="botao">Ok</button>
+    </p> 
+    
+    <div id ="jogo" >
+        <div class="linha">
+            <div class="casa" id="casa1">1</div>
+            <div class="casa" id="casa2">2</div>
+            <div class="casa" id="casa3">3</div>
+        </div>
+        <div class="linha">
+            <div class="casa" id="casa4">4</div>
+            <div class="casa" id="casa5">5</div>
+            <div class="casa" id="casa6">6</div>
+        </div>
+        <div class="linha">
+            <div class="casa" id="casa7">7</div>
+            <div class="casa" id="casa8">8</div>
+            <div class="casa" id="casa9">9</div>
+        </div>
+    </div>
+    <div id="resultado"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
